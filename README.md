@@ -14,7 +14,7 @@ This project uses a **Python client** to fetch system telemetry and sends it ove
 You can easily tweak the following variables in the source code to match your specific hardware or preferences:
 
 ### 1. ESP32 Firmware (`.ino` file)
-* **`SCREEN_WIDTH` / `SCREEN_HEIGHT`**: Default is `128`x`64`. Change to `128`x`32` if using the smaller OLED strip.
+* **`SCREEN_WIDTH` / `SCREEN_HEIGHT`**: Default is `128`x`64`. Change to `128`x`32` if using the smaller OLED strip. You would need to rearrange the items if its not 128*64 display.
 * **`OLED_RESET`**: Set to `-1` if your module doesn't have a reset pin.
 * **`SCREEN_ADDRESS`**: Usually `0x3C`, but some displays use `0x3D`.
 * **`BAUD_RATE`**: Default is `115200`. (Must match the Python script).
@@ -30,7 +30,8 @@ You can easily tweak the following variables in the source code to match your sp
 1. **Hardware**: Connect ESP32 `3.3V` -> OLED `VCC`, `GND` -> `GND`, `GPIO 21` -> `SDA`, and `GPIO 22` -> `SCL`.
 2. **Firmware**: Upload the sketch using Arduino IDE (requires `Adafruit_SSD1306` library).
 3. **Software**: Install Python dependencies: `pip install psutil pyserial`.
-4. **Run**: Start the Python script and watch your stats come to life!
+4. **Observation**: You could notice the ESP32 waiting for the python script.
+5. **Run**: you would need to run the script on your PC of which you want to obserrve the stats.
 
 ---
 
