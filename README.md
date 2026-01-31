@@ -1,7 +1,5 @@
 # ESP32-System-Stats-OLED-Monitor
 
-# ESP32 System Stats OLED Monitor
-
 A lightweight, real-time hardware monitor that displays PC performance metrics (CPU, RAM, and GPU) on an external I2C OLED screen via an ESP32.
 
 ---
